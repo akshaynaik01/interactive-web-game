@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Game</h1>
+            <p class="subtitle">Challenge yourself and achieve the highest score!</p>
+        </header>
+
+        <div class="game-wrapper">
+            <div class="game-info">
+                <div class="score-box">
+                    <span class="label">Score:</span>
+                    <span class="score" id="score">0</span>
+                </div>
+                <div class="lives-box">
+                    <span class="label">Lives:</span>
+                    <span class="lives" id="lives">3</span>
+                </div>
+                <div class="level-box">
+                    <span class="label">Level:</span>
+                    <span class="level" id="level">1</span>
+                </div>
+            </div>
+
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+            <div class="game-controls">
+                <button id="startBtn" class="btn btn-primary">Start Game</button>
+                <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+                <button id="restartBtn" class="btn btn-secondary">Restart</button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>How to Play</h2>
+            <ul>
+                <li><strong>Arrow Keys:</strong> Move left and right</li>
+                <li><strong>Spacebar:</strong> Jump or action</li>
+                <li><strong>Mouse Click:</strong> Shoot/Attack</li>
+                <li><strong>Objective:</strong> Collect items and avoid obstacles</li>
+                <li><strong>Score:</strong> Each item collected adds 10 points</li>
+            </ul>
+        </div>
+
+        <div class="game-status" id="gameStatus"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
